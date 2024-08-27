@@ -1,3 +1,16 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta:hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White:hsl(0, 0%, 100%);
+    --Font-P: 15px;
+    --ff-base: 'League Spartan';
+    --fw-thin: 400;
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +21,87 @@
     font-size: 11px;
     text-align: center;
   }
-  .attribution a {
+ .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--ff-base);
+
+}
+.main-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4% 6%;
+    box-shadow: -1px 4px 28px -5px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -1px 4px 28px -5px rgba(0,0,0,0.69);
+    -moz-box-shadow: -1px 4px 28px -5px rgba(0,0,0,0.69);
+    height: 80%;
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+                        url("./images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left,bottom right;
+    background-size: 40%, auto;
+    
+}
+.first-section-container{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+   
+}
+.first-section-container .text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 40%;
+}
+.text-container .big-title{
+    width: 70%;
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+    color: var(--Very-Dark-Magenta);
+}
+
+.text-container .description{
+    font-size: var(--Font-P);
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 1.2;
+    font-weight: var(--fw-regular);
+    padding: 1em 0;
+}
+.first-section-container .rating-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 50%;
+    
+    
+}
+.rating-container .rating-component{
+    display: flex;
+    align-items: center;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: .9em 1.3em;
+    gap: 2em;
+    border-radius: 10px;
+    width: 70%;
+}
+.rating-component .rating-text{
+    color: var(--Very-Dark-Magenta);
+    font-weight: var(--fw-bold);
+}
+
+.rating-component:nth-child(2){
+    margin-left: 3em;
+}
+.rating-component:nth-child(3){
+    margin-left: 6em;
+}
