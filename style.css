@@ -180,9 +180,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 8em;
-        
-        
+        gap: 2.5em;
 
     }
     .first-section-container{
@@ -191,6 +189,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2em;
     }
     .first-section-container .text-container{
         display: flex;
@@ -211,6 +210,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
        
 
     }
@@ -219,7 +219,10 @@ body{
         flex-direction: column;
         width: 80vw;
         margin: 0;
-        gap: 0;
+        gap: .7em;
+    }
+    .rating-component .rating-text{
+        font-weight: var(--fw-bold);
     }
 
     .main-container .second-section-container{
@@ -227,8 +230,7 @@ body{
         flex-direction: column;
         justify-content: center;  
         width: 100%;
-        gap: 1em;
-        margin-top: 3em;
+        gap: 2em;
         padding: 0;
         height: 100%;
     }
